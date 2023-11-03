@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ciudad extends Model
 {
     public $timestamps = false;
-    protected $fillable = ['id','nombre','valor'];
+    protected $table = 'ciudades';
+    protected $fillable = ['nombre'];
 }
