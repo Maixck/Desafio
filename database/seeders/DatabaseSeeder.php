@@ -67,5 +67,11 @@ class DatabaseSeeder extends Seeder
             'ciudad_id' => 3,
             'propietario_id'=> 3,
         ]);
+
+        $newUser = \App\Models\User::create([
+            'name'      => 'admin',
+            'email'     => 'admin@admin.com',
+            'password'  => 'admin',
+        ]);
     }
 }

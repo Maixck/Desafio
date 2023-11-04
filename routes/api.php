@@ -18,4 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('lotes', \App\Http\Controllers\Api\LoteController::class);
+Route::middleware('auth:sanctum')->apiResource('lotes', \App\Http\Controllers\Api\LoteController::class);
+
+//Route::get('/user/gettoken/{user}', \App\Http\Controllers\Api\UserController::getApiToken($user));
+Route::get('/user/getapitoken', [\App\Http\Controllers\Api\UserController::class, 'getApiToken'])->name('users.getapitoken');
