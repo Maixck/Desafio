@@ -10,5 +10,6 @@ use Laravel\Prompts\Table;
 class Propietario extends Model
 {
 //    use HasFactory;
+    protected $table = 'propietarios';
     protected $fillable = ['nombre','email','telefono'];
 }
