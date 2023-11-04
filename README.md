@@ -1,6 +1,7 @@
 ## Acerca del proyecto
 Esta es la respuesta al Desafío 1 de IDESA, esta desarrollado en el framework laravel con base de datos Mysql
 Pasos para correr el proyecto
+
 1- clona el proyecto
 
 2- ejecuta el compando composer update en la carpeta root del proyecto
